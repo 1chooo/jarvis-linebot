@@ -8,6 +8,8 @@ Version: v0.1.0
 
 import os
 import json
+import datetime as dt
+# import boto3
 from linebot import LineBotApi
 from linebot import WebhookHandler
 from linebot.models import MessageEvent
@@ -22,15 +24,80 @@ line_bot_api = LineBotApi(os.environ['CHANNEL_ACCESS_TOKEN'])
 handler = WebhookHandler(os.environ['CHANNEL_SECRET'])
 
 def lambda_handler(event, context):
+    # boto3.resource("dynamodb")
     @handler.add(MessageEvent, message=TextMessage)
     def handle_text_message(event):
 
         event_text = event.message.text
+        ready_to_add_today_todos = False
 
-        if event_text == "Hello":
+        today_todos = []
+
+        if event_text == "Got things to do, busy! 🥴":
+            ready_to_add_today_todos = True
             reply_messages = [
                 TextSendMessage(
-                    text=f'World'
+                    text=f'Hi, Got things to do, busy! 🥴'
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == "I want to see how busy you really are 👨🏻‍💻":
+            ready_to_add_today_todos = True
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Hi, I want to see how busy you really are 👨🏻‍💻'
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == "I want you to know how extravagant I can be 🤑":
+            ready_to_add_today_todos = True
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Hi, I want you to know how extravagant I can be 🤑'
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == "How rich am I, Huh? 💳":
+            ready_to_add_today_todos = True
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Hi, How rich am I, Huh? 💳'
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == "You know how much weight I pushed today? 😮‍💨":
+            ready_to_add_today_todos = True
+            reply_messages = [
+                TextSendMessage(
+                    text=f'You know how much weight I pushed today? 😮‍💨'
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == "I just want to say something... ✍🏼":
+            ready_to_add_today_todos = True
+            reply_messages = [
+                TextSendMessage(
+                    text=f'I just want to say something... ✍🏼'
                 ),
             ]
                 
