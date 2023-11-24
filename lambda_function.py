@@ -47,8 +47,15 @@ def handle_todo_goal(event):
                         ImageCarouselColumn(
                             image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
                             action=MessageAction(
-                                label='Add a goal',
+                                label='Add a TODO',
                                 text='I want to add sth...'
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
+                            action=MessageAction(
+                                label='Add a Diary',
+                                text='I just want to say something... ✍🏼'
                             )
                         ),
                     ]
@@ -128,10 +135,87 @@ def lambda_handler(event, context):
                 event.reply_token,
                 reply_messages
             )
-        elif event_text == "I just want to say something... ✍🏼":
+        elif event_text == "I want to check 1chooo Diary ✍🏼":
             reply_messages = [
                 TextSendMessage(
-                    text=f'I just want to say something... ✍🏼'
+                    text=f'Please select the type of 1chooo\'s life'
+                ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                        ]
+                    )
                 ),
             ]
                 
@@ -150,6 +234,10 @@ def lambda_handler(event, context):
                 ImageSendMessage(
                     original_content_url = "https://2023-amazon-ambassador.s3.amazonaws.com/hugo_grad.png",
                     preview_image_url = "https://2023-amazon-ambassador.s3.amazonaws.com/hugo_grad.png",
+                ),
+                ImageSendMessage(
+                    original_content_url = "https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png",
+                    preview_image_url = "https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png",
                 ),
             ]
                 
