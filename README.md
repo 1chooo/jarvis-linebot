@@ -1,6 +1,6 @@
 # 1chooo's Jarvis
 
-![](./imgs/large/richmenu.jpg)
+![](./docs/imgs/large/richmenu.jpg)
 
 ## Create `line-bot-sdk` Layer [^1]
 
