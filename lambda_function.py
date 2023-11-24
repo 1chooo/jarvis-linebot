@@ -18,35 +18,73 @@ from linebot.models import ImageMessage
 from linebot.models import TextSendMessage
 from linebot.models import ImageSendMessage
 from linebot.models import VideoSendMessage
+from linebot.models import TemplateSendMessage
+from linebot.models import ImageCarouselTemplate
+from linebot.models import ImageCarouselColumn
+from linebot.models import MessageAction
 from linebot.exceptions import InvalidSignatureError
 
 line_bot_api = LineBotApi(os.environ['CHANNEL_ACCESS_TOKEN'])
 handler = WebhookHandler(os.environ['CHANNEL_SECRET'])
 
+def handle_todo_goal(event):
+
+    ready_to_add_todo = False
+    todos = []
+
+    event_text = event.message.text
+
+    if event_text == "Got things to do, busy! 🥴":
+
+        reply_messages = [
+            TextSendMessage(
+                text="Please choose the type of your goal"
+            ),
+            TemplateSendMessage(
+                alt_text='ImageCarousel template',
+                template=ImageCarouselTemplate(
+                    columns=[
+                        ImageCarouselColumn(
+                            image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
+                            action=MessageAction(
+                                label='Add a goal',
+                                text='I want to add sth...'
+                            )
+                        ),
+                    ]
+                )
+            ),
+        ]
+        
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
+    else:
+        return
+    
 def lambda_handler(event, context):
     # boto3.resource("dynamodb")
+    @handler.add(MessageEvent, message=ImageMessage)
+    def handle_image_message(event):
+        reply_messages = [
+            TextSendMessage(
+                text=f'We have received your image; however, we won\'t do anything with it now.'
+            ),
+        ]
+            
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
+
     @handler.add(MessageEvent, message=TextMessage)
     def handle_text_message(event):
 
         event_text = event.message.text
-        ready_to_add_today_todos = False
 
-        today_todos = []
-
-        if event_text == "Got things to do, busy! 🥴":
-            ready_to_add_today_todos = True
-            reply_messages = [
-                TextSendMessage(
-                    text=f'Hi, Got things to do, busy! 🥴'
-                ),
-            ]
-                
-            line_bot_api.reply_message(
-                event.reply_token,
-                reply_messages
-            )
-        elif event_text == "I want to see how busy you really are 👨🏻‍💻":
-            ready_to_add_today_todos = True
+        handle_todo_goal(event)
+        if event_text == "I want to see how busy you really are 👨🏻‍💻":
             reply_messages = [
                 TextSendMessage(
                     text=f'Hi, I want to see how busy you really are 👨🏻‍💻'
@@ -58,7 +96,6 @@ def lambda_handler(event, context):
                 reply_messages
             )
         elif event_text == "I want you to know how extravagant I can be 🤑":
-            ready_to_add_today_todos = True
             reply_messages = [
                 TextSendMessage(
                     text=f'Hi, I want you to know how extravagant I can be 🤑'
@@ -70,7 +107,6 @@ def lambda_handler(event, context):
                 reply_messages
             )
         elif event_text == "How rich am I, Huh? 💳":
-            ready_to_add_today_todos = True
             reply_messages = [
                 TextSendMessage(
                     text=f'Hi, How rich am I, Huh? 💳'
@@ -82,7 +118,6 @@ def lambda_handler(event, context):
                 reply_messages
             )
         elif event_text == "You know how much weight I pushed today? 😮‍💨":
-            ready_to_add_today_todos = True
             reply_messages = [
                 TextSendMessage(
                     text=f'You know how much weight I pushed today? 😮‍💨'
@@ -94,7 +129,6 @@ def lambda_handler(event, context):
                 reply_messages
             )
         elif event_text == "I just want to say something... ✍🏼":
-            ready_to_add_today_todos = True
             reply_messages = [
                 TextSendMessage(
                     text=f'I just want to say something... ✍🏼'
@@ -151,7 +185,6 @@ def lambda_handler(event, context):
                 event.reply_token,
                 reply_messages
             )
-
 
     try:
         # get X-Line-Signature header value
