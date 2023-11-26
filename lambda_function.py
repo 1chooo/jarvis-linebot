@@ -19,6 +19,7 @@ from linebot.models import VideoMessage
 from linebot.models import AudioMessage
 from linebot.models import FileMessage
 from linebot.models import StickerMessage
+from linebot.models import LocationMessage
 from linebot.models import TextSendMessage
 from linebot.models import ImageSendMessage
 from linebot.models import VideoSendMessage
