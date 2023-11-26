@@ -266,6 +266,32 @@ def lambda_handler(event, context):
                 reply_messages
             )
 
+    @handler.add(MessageEvent, message=LocationMessage)
+    def handle_sticker_message(event):
+        reply_messages = [
+            TextSendMessage(
+                text=f'We have received your location; however, we won\'t do anything with it now.'
+            ),
+        ]
+            
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
+
+    @handler.add(MessageEvent, message=StickerMessage)
+    def handle_sticker_message(event):
+        reply_messages = [
+            TextSendMessage(
+                text=f'We have received your sticker; however, we won\'t do anything with it now.'
+            ),
+        ]
+            
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
+
     @handler.add(MessageEvent, message=FileMessage)
     def handle_file_message(event):
         reply_messages = [
