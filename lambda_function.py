@@ -15,6 +15,8 @@ from linebot import WebhookHandler
 from linebot.models import MessageEvent
 from linebot.models import TextMessage
 from linebot.models import ImageMessage
+from linebot.models import VideoMessage
+from linebot.models import AudioMessage
 from linebot.models import TextSendMessage
 from linebot.models import ImageSendMessage
 from linebot.models import VideoSendMessage
@@ -72,18 +74,6 @@ def handle_todo_goal(event):
     
 def lambda_handler(event, context):
     # boto3.resource("dynamodb")
-    @handler.add(MessageEvent, message=ImageMessage)
-    def handle_image_message(event):
-        reply_messages = [
-            TextSendMessage(
-                text=f'We have received your image; however, we won\'t do anything with it now.'
-            ),
-        ]
-            
-        line_bot_api.reply_message(
-            event.reply_token,
-            reply_messages
-        )
 
     @handler.add(MessageEvent, message=TextMessage)
     def handle_text_message(event):
@@ -273,6 +263,44 @@ def lambda_handler(event, context):
                 event.reply_token,
                 reply_messages
             )
+
+    @handler.add(MessageEvent, message=AudioMessage)
+    def handle_audio_message(event):
+        reply_messages = [
+            TextSendMessage(
+                text=f'We have received your audio; however, we won\'t do anything with it now.'
+            ),
+        ]
+            
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
+    @handler.add(MessageEvent, message=VideoMessage)
+    def handle_video_message(event):
+        reply_messages = [
+            TextSendMessage(
+                text=f'We have received your video; however, we won\'t do anything with it now.'
+            ),
+        ]
+            
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
+
+    @handler.add(MessageEvent, message=ImageMessage)
+    def handle_image_message(event):
+        reply_messages = [
+            TextSendMessage(
+                text=f'We have received your image; however, we won\'t do anything with it now.'
+            ),
+        ]
+            
+        line_bot_api.reply_message(
+            event.reply_token,
+            reply_messages
+        )
 
     try:
         # get X-Line-Signature header value
