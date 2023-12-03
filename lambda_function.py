@@ -133,56 +133,21 @@ def lambda_handler(event, context):
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
                                 action=MessageAction(
                                     label='Next Bank',
-                                    text='I want to check my reading list 📚'
+                                    text='I want to check my Next Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
                                 action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
+                                    label='Line Bank',
+                                    text='I want to check my Line Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
                                 action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
-                                )
-                            ),
-                            ImageCarouselColumn(
-                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
-                                action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
-                                )
-                            ),
-                            ImageCarouselColumn(
-                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
-                                action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
-                                )
-                            ),
-                            ImageCarouselColumn(
-                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
-                                action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
-                                )
-                            ),
-                            ImageCarouselColumn(
-                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
-                                action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
-                                )
-                            ),
-                            ImageCarouselColumn(
-                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
-                                action=MessageAction(
-                                    label='Reading List',
-                                    text='I want to check my reading list 📚'
+                                    label='Post Office',
+                                    text='I want to check my Post Office account 💳'
                                 )
                             ),
                         ]
