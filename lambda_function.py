@@ -167,6 +167,48 @@ def lambda_handler(event, context):
                 TextSendMessage(
                     text=f'012\n81680007844308'
                 ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Bank',
+                                    text='I want to check my Fuban Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Credit',
+                                    text='I want to check my Fuban Credit Card account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Next Bank',
+                                    text='I want to check my Next Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Line Bank',
+                                    text='I want to check my Line Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Post Office',
+                                    text='I want to check my Post Office account 💳'
+                                )
+                            ),
+                        ]
+                    )
+                ),
             ]
                 
             line_bot_api.reply_message(
@@ -180,6 +222,216 @@ def lambda_handler(event, context):
                 ),
                 TextSendMessage(
                     text=f'012\n66306131441395'
+                ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Bank',
+                                    text='I want to check my Fuban Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Credit',
+                                    text='I want to check my Fuban Credit Card account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Next Bank',
+                                    text='I want to check my Next Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Line Bank',
+                                    text='I want to check my Line Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Post Office',
+                                    text='I want to check my Post Office account 💳'
+                                )
+                            ),
+                        ]
+                    )
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == 'I want to check my Next Bank account 💳':
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Your Next Bank account 💳'
+                ),
+                TextSendMessage(
+                    text=f'823\n88660000039748'
+                ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Bank',
+                                    text='I want to check my Fuban Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Credit',
+                                    text='I want to check my Fuban Credit Card account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Next Bank',
+                                    text='I want to check my Next Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Line Bank',
+                                    text='I want to check my Line Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Post Office',
+                                    text='I want to check my Post Office account 💳'
+                                )
+                            ),
+                        ]
+                    )
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == 'I want to check my Line Bank account 💳':
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Your Line Bank account 💳'
+                ),
+                TextSendMessage(
+                    text=f'824\n111015850968'
+                ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Bank',
+                                    text='I want to check my Fuban Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Credit',
+                                    text='I want to check my Fuban Credit Card account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Next Bank',
+                                    text='I want to check my Next Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Line Bank',
+                                    text='I want to check my Line Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Post Office',
+                                    text='I want to check my Post Office account 💳'
+                                )
+                            ),
+                        ]
+                    )
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == 'I want to check my Post Office account 💳':
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Your Post Office account 💳'
+                ),
+                TextSendMessage(
+                    text=f'700\n00019900525908'
+                ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Bank',
+                                    text='I want to check my Fuban Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Credit',
+                                    text='I want to check my Fuban Credit Card account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Next Bank',
+                                    text='I want to check my Next Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Line Bank',
+                                    text='I want to check my Line Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Post Office',
+                                    text='I want to check my Post Office account 💳'
+                                )
+                            ),
+                        ]
+                    )
                 ),
             ]
                 
