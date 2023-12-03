@@ -109,7 +109,112 @@ def lambda_handler(event, context):
         elif event_text == "How rich am I, Huh? 💳":
             reply_messages = [
                 TextSendMessage(
-                    text=f'Hi, How rich am I, Huh? 💳'
+                    text=f'Here is your bank account 💳'
+                ),
+                TemplateSendMessage(
+                    alt_text='ImageCarousel template',
+                    template=ImageCarouselTemplate(
+                        columns=[
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Bank',
+                                    text='I want to check my Fuban Bank account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Fuban Credit',
+                                    text='I want to check my Fuban Credit Card account 💳'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Next Bank',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                            ImageCarouselColumn(
+                                image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/06_diary/test2.png',
+                                action=MessageAction(
+                                    label='Reading List',
+                                    text='I want to check my reading list 📚'
+                                )
+                            ),
+                        ]
+                    )
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == 'I want to check my Fuban Bank account 💳':
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Your Fuban Bank account 💳'
+                ),
+                TextSendMessage(
+                    text=f'012\n81680007844308'
+                ),
+            ]
+                
+            line_bot_api.reply_message(
+                event.reply_token,
+                reply_messages
+            )
+        elif event_text == 'I want to check my Fuban Credit Card account 💳':
+            reply_messages = [
+                TextSendMessage(
+                    text=f'Your Fuban Credit Card account 💳'
+                ),
+                TextSendMessage(
+                    text=f'012\n66306131441395'
                 ),
             ]
                 
