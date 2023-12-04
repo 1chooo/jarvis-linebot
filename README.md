@@ -53,7 +53,7 @@ $ ./build_line_bot_sdk_layer.sh
 > </aside>
 
 ## License
-Released under [MIT](./LICENSE) by [AWS Educate TW](https://aws.amazon.com/tw/education/awseducate/), [Hugo ChunHo Lin](https://github.com/1chooo).
+Released under [MIT](./LICENSE) by [Hugo ChunHo Lin](https://github.com/1chooo).
 
 This software can be modified and reused without restriction.
 The original license must be included with any copies of this software.
