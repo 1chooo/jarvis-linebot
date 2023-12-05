@@ -165,7 +165,10 @@ def lambda_handler(event, context):
                     text=f'Your Fuban Bank account 💳'
                 ),
                 TextSendMessage(
-                    text=f'012\n81680007844308'
+                    text=f'012'
+                ),
+                TextSendMessage(
+                    text=f'81680007844308'
                 ),
                 TemplateSendMessage(
                     alt_text='ImageCarousel template',
@@ -221,7 +224,10 @@ def lambda_handler(event, context):
                     text=f'Your Fuban Credit Card account 💳'
                 ),
                 TextSendMessage(
-                    text=f'012\n66306131441395'
+                    text=f'012'
+                ),
+                TextSendMessage(
+                    text=f'66306131441395'
                 ),
                 TemplateSendMessage(
                     alt_text='ImageCarousel template',
@@ -277,7 +283,10 @@ def lambda_handler(event, context):
                     text=f'Your Next Bank account 💳'
                 ),
                 TextSendMessage(
-                    text=f'823\n88660000039748'
+                    text=f'823'
+                ),
+                TextSendMessage(
+                    text=f'88660000039748'
                 ),
                 TemplateSendMessage(
                     alt_text='ImageCarousel template',
@@ -333,7 +342,10 @@ def lambda_handler(event, context):
                     text=f'Your Line Bank account 💳'
                 ),
                 TextSendMessage(
-                    text=f'824\n111015850968'
+                    text=f'824'
+                ),
+                TextSendMessage(
+                    text=f'111015850968'
                 ),
                 TemplateSendMessage(
                     alt_text='ImageCarousel template',
@@ -389,7 +401,10 @@ def lambda_handler(event, context):
                     text=f'Your Post Office account 💳'
                 ),
                 TextSendMessage(
-                    text=f'700\n00019900525908'
+                    text=f'700'
+                ),
+                TextSendMessage(
+                    text=f'00019900525908'
                 ),
                 TemplateSendMessage(
                     alt_text='ImageCarousel template',
