@@ -1,8 +1,10 @@
 # 1chooo's Jarvis
 
-![](./docs/imgs/large/richmenu.jpg)
+![](./docs/imgs/richmenu.jpg)
 
-## Create `line-bot-sdk` Layer [^1]
+## Create `Lambda Function` Layer
+
+### Create `line-bot-sdk` Layer [^1]
 
 ```shell
 $ mkdir python
@@ -13,9 +15,34 @@ $ zip -r line-bot-sdk.zip ./python
 $ rm -rf ./python
 ```
 
-### With shell script
+### Create `openai` Layer [^1]
+
 ```shell
-$ ./build_line_bot_sdk_layer.sh
+$ mkdir python
+$ cd python
+$ pip install --target . openai 
+$ cd ..
+$ zip -r openai.zip ./python
+$ rm -rf ./python
+$ echo "Created openai.zip"
+```
+
+### Create `openai` Layer [^1]
+
+```shell
+$ mkdir python
+$ cd python
+$ pip install --target . openai 
+$ cd ..
+$ zip -r openai.zip ./python
+$ rm -rf ./python
+$ echo "Created openai.zip"
+```
+
+### or With shell script
+```shell
+$ chmod +x ./build_layer.sh
+$ ./build_layer.sh
 ```
 
 ## Add Permission with s3 [^2]
