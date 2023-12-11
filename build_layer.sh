@@ -13,7 +13,7 @@ pip install --target . line-bot-sdk
 
 cd ..
 
-zip -r line-bot-sdk.zip ./python
+zip -r ./layers/line-bot-sdk.zip ./python
 
 rm -rf ./python
 
@@ -28,7 +28,7 @@ pip install --target . openai
 
 cd ..
 
-zip -r openai.zip ./python
+zip -r ./layers/openai.zip ./python
 
 rm -rf ./python
 
@@ -43,7 +43,7 @@ pip install --target . langchain
 
 cd ..
 
-zip -r langchain.zip ./python
+zip -r ./layers/langchain.zip ./python
 
 rm -rf ./python
 
