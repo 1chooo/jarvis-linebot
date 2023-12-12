@@ -52,14 +52,35 @@ def handle_todo_goal(event):
                         ImageCarouselColumn(
                             image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
                             action=MessageAction(
-                                label='Add a TODO',
+                                label='TODO',
                                 text='I want to add sth...'
                             )
                         ),
                         ImageCarouselColumn(
                             image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
                             action=MessageAction(
-                                label='Add a Diary',
+                                label='Water Intake',
+                                text='I want to add water intake... ✍🏼'
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
+                            action=MessageAction(
+                                label='Website',
+                                text='I want to add website wishing List... ✍🏼'
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
+                            action=MessageAction(
+                                label='Book',
+                                text='I want to add book wishing List... ✍🏼'
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url='https://hackmd.io/_uploads/BkwF_MI23.jpg',
+                            action=MessageAction(
+                                label='Diary',
                                 text='I just want to say something... ✍🏼'
                             )
                         ),
