@@ -139,35 +139,35 @@ def lambda_handler(event, context):
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_bank.png',
                                 action=MessageAction(
-                                    label='Fuban Bank',
+                                    label=None,
                                     text='I want to check my Fuban Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_credit.png',
                                 action=MessageAction(
-                                    label='Fuban Credit',
+                                    label=None,
                                     text='I want to check my Fuban Credit Card account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/next_bank.png',
                                 action=MessageAction(
-                                    label='Next Bank',
+                                    label=None,
                                     text='I want to check my Next Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/line_bank.png',
                                 action=MessageAction(
-                                    label='Line Bank',
+                                    label=None,
                                     text='I want to check my Line Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/post_office.png',
                                 action=MessageAction(
-                                    label='Post Office',
+                                    label=None,
                                     text='I want to check my Post Office account 💳'
                                 )
                             ),
@@ -198,35 +198,35 @@ def lambda_handler(event, context):
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_credit.png',
                                 action=MessageAction(
-                                    label='Fuban Credit',
+                                    label=None,
                                     text='I want to check my Fuban Credit Card account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/next_bank.png',
                                 action=MessageAction(
-                                    label='Next Bank',
+                                    label=None,
                                     text='I want to check my Next Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/line_bank.png',
                                 action=MessageAction(
-                                    label='Line Bank',
+                                    label=None,
                                     text='I want to check my Line Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/post_office.png',
                                 action=MessageAction(
-                                    label='Post Office',
+                                    label=None,
                                     text='I want to check my Post Office account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_bank.png',
                                 action=MessageAction(
-                                    label='Fuban Bank',
+                                    label=None,
                                     text='I want to check my Fuban Bank account 💳'
                                 )
                             ),
@@ -257,35 +257,35 @@ def lambda_handler(event, context):
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/next_bank.png',
                                 action=MessageAction(
-                                    label='Next Bank',
+                                    label=None,
                                     text='I want to check my Next Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/line_bank.png',
                                 action=MessageAction(
-                                    label='Line Bank',
+                                    label=None,
                                     text='I want to check my Line Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/post_office.png',
                                 action=MessageAction(
-                                    label='Post Office',
+                                    label=None,
                                     text='I want to check my Post Office account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_bank.png',
                                 action=MessageAction(
-                                    label='Fuban Bank',
+                                    label=None,
                                     text='I want to check my Fuban Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_credit.png',
                                 action=MessageAction(
-                                    label='Fuban Credit',
+                                    label=None,
                                     text='I want to check my Fuban Credit Card account 💳'
                                 )
                             ),
@@ -316,35 +316,35 @@ def lambda_handler(event, context):
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/line_bank.png',
                                 action=MessageAction(
-                                    label='Line Bank',
+                                    label=None,
                                     text='I want to check my Line Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/post_office.png',
                                 action=MessageAction(
-                                    label='Post Office',
+                                    label=None,
                                     text='I want to check my Post Office account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_bank.png',
                                 action=MessageAction(
-                                    label='Fuban Bank',
+                                    label=None,
                                     text='I want to check my Fuban Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_credit.png',
                                 action=MessageAction(
-                                    label='Fuban Credit',
+                                    label=None,
                                     text='I want to check my Fuban Credit Card account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/next_bank.png',
                                 action=MessageAction(
-                                    label='Next Bank',
+                                    label=None,
                                     text='I want to check my Next Bank account 💳'
                                 )
                             ),
@@ -375,35 +375,35 @@ def lambda_handler(event, context):
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/post_office.png',
                                 action=MessageAction(
-                                    label='Post Office',
+                                    label=None,
                                     text='I want to check my Post Office account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_bank.png',
                                 action=MessageAction(
-                                    label='Fuban Bank',
+                                    label=None,
                                     text='I want to check my Fuban Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_credit.png',
                                 action=MessageAction(
-                                    label='Fuban Credit',
+                                    label=None,
                                     text='I want to check my Fuban Credit Card account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/next_bank.png',
                                 action=MessageAction(
-                                    label='Next Bank',
+                                    label=None,
                                     text='I want to check my Next Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/line_bank.png',
                                 action=MessageAction(
-                                    label='Line Bank',
+                                    label=None,
                                     text='I want to check my Line Bank account 💳'
                                 )
                             ),
@@ -434,35 +434,35 @@ def lambda_handler(event, context):
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_bank.png',
                                 action=MessageAction(
-                                    label='Fuban Bank',
+                                    label=None,
                                     text='I want to check my Fuban Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/fuban_credit.png',
                                 action=MessageAction(
-                                    label='Fuban Credit',
+                                    label=None,
                                     text='I want to check my Fuban Credit Card account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/next_bank.png',
                                 action=MessageAction(
-                                    label='Next Bank',
+                                    label=None,
                                     text='I want to check my Next Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/line_bank.png',
                                 action=MessageAction(
-                                    label='Line Bank',
+                                    label=None,
                                     text='I want to check my Line Bank account 💳'
                                 )
                             ),
                             ImageCarouselColumn(
                                 image_url='https://1chooo-jarvis.s3.ap-northeast-3.amazonaws.com/04_savings/post_office.png',
                                 action=MessageAction(
-                                    label='Post Office',
+                                    label=None,
                                     text='I want to check my Post Office account 💳'
                                 )
                             ),
