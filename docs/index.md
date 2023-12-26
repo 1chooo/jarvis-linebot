@@ -41,4 +41,8 @@ If a significant portion of the source code is used, please provide a link back 
         <a href="https://medium.com/@1chooo" target="_blank"><b>📠 Medium</b></a> |
         <a href="https://www.youtube.com/channel/UCpBU1rXOfdTtxX939f_P_dA" target="_blank"><b>🎥 YouTube</b></a>
     </p>
+    <div>
+        <b>©2023  Hugo H. Lin</b>
+    </div>
 </div>
+
